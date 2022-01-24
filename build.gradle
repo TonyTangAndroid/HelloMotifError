@@ -6,32 +6,21 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        
+
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.4'
-        
+        classpath 'com.android.tools.build:gradle:4.2.2'
+
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
 
-plugins {
-    id "com.github.sherter.google-java-format" version "0.9"
-}
-
-apply from: "${rootDir}/gradle/google_java_format.gradle"
-
-
 allprojects {
     repositories {
         google()
         mavenCentral()
-        
+
     }
 }
 
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
