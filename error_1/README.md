@@ -31,7 +31,27 @@ error: cannot access motif.sample.app.root.PersonEntity
 ## The reproduced message on Java 11 :
 
 ```
-TODO
+Task :error_1:feature_logged_in:compileDebugJavaWithJavac FAILED
+The following annotation processors are not incremental: jetified-motif-compiler-0.3.7.jar (com.uber.motif:motif-compiler:0.3.7).
+Make sure all annotation processors are incremental to improve your build speed.
+/Users/tonytang/0_motif/HelloMotifError/error_1/feature_logged_in/build/generated/ap_generated_sources/debug/out/motif/sample/app/root/LoggedInScopeImpl.java:35: error: cannot find symbol
+  public GreetingScope greetingScope(final PersonEntity personEntity) {
+                                           ^
+  symbol:   class PersonEntity
+  location: class LoggedInScopeImpl
+1 error
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':error_1:feature_logged_in:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
 ```
 
 ## Why such message is reproduced?
