@@ -26,7 +26,6 @@ android {
 dependencies {
     implementation "com.uber.motif:motif:${mavenVersions.motif}"
     annotationProcessor "com.uber.motif:motif-compiler:${mavenVersions.motif}"
-    testAnnotationProcessor "com.uber.motif:motif-compiler:${mavenVersions.motif}"
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'com.google.truth:truth:1.1.3'
 }
