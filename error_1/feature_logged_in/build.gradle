@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply from: "${rootDir}/gradle/android_common.gradle"
 dependencies {
-    implementation project(':error_1:common')
     implementation project(':error_1:foundation')
 }
