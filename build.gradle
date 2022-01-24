@@ -16,13 +16,6 @@ buildscript {
     }
 }
 
-plugins {
-    id "com.github.sherter.google-java-format" version "0.9"
-}
-
-apply from: "${rootDir}/gradle/google_java_format.gradle"
-
-
 allprojects {
     repositories {
         google()
@@ -31,7 +24,3 @@ allprojects {
     }
 }
 
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
