@@ -1,3 +1,3 @@
-ext.versions = [
+ext.mavenVersions = [
         motif: '0.3.7',
 ]
