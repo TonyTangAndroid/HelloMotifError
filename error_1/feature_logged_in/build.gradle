@@ -4,6 +4,6 @@ apply from: "$rootDir/gradle/android_common.gradle"
 
 dependencies {
     //Note: Uncomment the following line to make the code compile and unit test pass.
-//    implementation project(':error_1:common')
+    implementation project(':error_1:common')
     implementation project(':error_1:foundation')
 }
